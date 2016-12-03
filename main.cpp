@@ -12,11 +12,11 @@
 
 int main()
 {
-	const char* ExcelPath = DEFAULT_EXCEL_PATH;			//±í¸ñÂ·¾¶
-	const int SheetCount = DEFAULT_SHEET_COUNT;			//SheetÊıÄ¿
-	const int items = DEFAULT_ITEMS;									//Ã¿¸öSheetÖĞ²ÉÑùÊı
-	const int Dimension = DEFAULT_DEMENSION;				//¼ÆËãÊ±²ÉÓÃµÄÊı×éÎ¬¶È
-	const double rate = DEFAULT_RATE;								//ãĞÖµÒò×Ó
+	const char* ExcelPath = DEFAULT_EXCEL_PATH;			//è¡¨æ ¼è·¯å¾„
+	const int SheetCount = DEFAULT_SHEET_COUNT;			//Sheetæ•°ç›®
+	const int items = DEFAULT_ITEMS;									//æ¯ä¸ªSheetä¸­é‡‡æ ·æ•°
+	const int Dimension = DEFAULT_DEMENSION;				//è®¡ç®—æ—¶é‡‡ç”¨çš„æ•°ç»„ç»´åº¦
+	const double rate = DEFAULT_RATE;								//é˜ˆå€¼å› å­
 
 	std::vector<double> Ret = GetSampleEntropy<double>(ExcelPath, SheetCount, items ,Dimension, rate);
 	for (auto& i : Ret)
@@ -29,10 +29,3 @@ int main()
 }
 
 
-/*
-ĞèÒª¸Ä½øµÄµØ·½£º
-	Ğ§ÂÊ£¬¸´ÔÓ¶È 
-	vector´«²Î£¬ÓÃconst &
-	MyMathÖĞ·½·¨µÄÄ£°å»¯
-	ÓÃÒì³££¬»»µôÒ»´ó¶ÑµÄassert()
-*/
